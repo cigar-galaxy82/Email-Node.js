@@ -1,0 +1,23 @@
+{
+  "profiles": {
+    "communication/send-email": {
+      "version": "2.1.0",
+      "providers": {
+        "sendgrid": {}
+      },
+      "priority": [
+        "sendgrid"
+      ]
+    }
+  },
+  "providers": {
+    "sendgrid": {
+      "security": [
+        {
+          "id": "bearer_token",
+          "token": "$SENDGRID_TOKEN"
+        }
+      ]
+    }
+  }
+}

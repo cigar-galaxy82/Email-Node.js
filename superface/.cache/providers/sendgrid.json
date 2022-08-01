@@ -1,0 +1,17 @@
+{
+  "name": "sendgrid",
+  "services": [
+    {
+      "id": "default",
+      "baseUrl": "https://api.sendgrid.com"
+    }
+  ],
+  "defaultService": "default",
+  "securitySchemes": [
+    {
+      "id": "bearer_token",
+      "type": "http",
+      "scheme": "bearer"
+    }
+  ]
+}
